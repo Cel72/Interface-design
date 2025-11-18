@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+if [[ ! -f SortedCollectionInterface.java ]]; then
+	echo "Warning Submission Fails Check: SortedCollectionInterface.java not found"
+	exit 1
+fi
+
+if [[ ! -f IterableMultiKeySortedCollectionInterface.java ]]; then
+	echo "Warning Submission Fails Check: IterableMultiKeySortedCollectionInterface.java not found"
+	exit 1
+fi
+
+if [[ ! -f KeyListInterface.java ]]; then
+	echo "Warning Submission Fails Check: IterableMultiKeySortedCollectionInterface.java not found"
+	exit 1
+fi
+
+if [[ ! -f IndividualBackendInterface.java ]] && [[ ! -f IndividualFrontendInterface.java ]]; then
+	echo "Warning Submission Fails Check: IndividualFrontendInterface.java or IndividualBackendInterface.java not found"
+	exit 1
+fi
+
+if [[ ! -f FrontendInterface.java ]]; then
+	echo "Warning Submission Fails Check: FrontendInterface.java missing; submit by Friday, Sep 29"
+	exit 1
+fi
+
+if [[ ! -f BackendInterface.java ]]; then
+	echo "Warning Submission Fails Check: BackendInterface.java missing; submit by Friday, Sep 29"
+	exit 1
+fi
+
+echo "Submission Passed Basic Scan"
+exit 0
